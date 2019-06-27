@@ -14,21 +14,23 @@
                                 <button class="btn btn-primary" id="next" onclick="next()"><i class="fas fa-arrow-right"></i></button>
                             </div>
                         </div>
-                        <table class="table table-responsive">
-                            <thead class="thead thead-dark">
-                                <tr>
-                                    <th>Nome</th>
-                                    <th>Slogan</th>
-                                    <th>Primeira Fabricação</th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody id="result">
+                        <div class="overflow-x">
+                            <table class="table">
+                                <thead class="thead thead-dark">
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Slogan</th>
+                                        <th>Primeira Fabricação</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="result">
 
-                            </tbody>
-                            
-                        </table>
+                                </tbody>
+                                
+                            </table>
+                        </div>
                     </div>
             </div>
         </div>

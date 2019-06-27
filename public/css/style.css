@@ -15,3 +15,7 @@ body {
 .star-icon-yellow, .star-icon-yellow:hover{
     color: yellow;
 }
+
+.overflow-x {
+    overflow-x: scroll
+}
