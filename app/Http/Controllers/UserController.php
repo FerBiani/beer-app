@@ -79,7 +79,7 @@ class UserController extends Controller
         ];
 
         if($data['user']->id !== Auth::user()->id) {
-            return redirect('/')->with('warning', 'Você não tem permissão para acessar esse recurso!');
+            return redirect('/home')->with('warning', 'Você não tem permissão para acessar esse recurso!');
         }
 
         return view('auth.register', compact('data'));
@@ -90,7 +90,7 @@ class UserController extends Controller
         $user = User::find($id);
 
         if($user->id !== Auth::user()->id) {
-            return redirect('/')->with('warning', 'Você não tem permissão para acessar esse recurso!');
+            return redirect('/home')->with('warning', 'Você não tem permissão para acessar esse recurso!');
         }
 
         DB::beginTransaction();
