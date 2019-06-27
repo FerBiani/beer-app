@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <!-- Auth::check() ? url('user/'.Auth::user()->id) : url('user') -->
-                    <form id="form" method="POST" action="{{ url($data['url']) }}">
+                    <form id="form" method="POST" action="{{ url($data['url']) }}" autocomplete="off">
                         @csrf
 
                         @auth
@@ -20,7 +20,7 @@
                             <label for="name" class="col-md-4 col-form-label"><b>Nome</b></label>
 
                             <div class="col-md-12">
-                                <input id="name" type="text" class="form-control" name="user[name]" value="{{ old('user.name', $data['user'] ? $data['user']->name : '') }}" placeholder="Nome" required autofocus>
+                                <input id="name" type="text" class="form-control" name="user[name]" value="{{ old('user.name', $data['user'] ? $data['user']->name : '') }}" placeholder="Nome" required>
                                 <span class="errors"> {{ $errors->first('user.name') }} </span>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                                         @endif
 
                                         <div class="col-md-9">
-                                            <input type="text" class="form-control phone" name="phones[{{$key}}][number]" value="{{ old('phones.'.$key.'.number', isset($phone->number) ? $phone->number : '')}}" placeholder="Telefone" required>
+                                            <input id="phones[{{$key}}][number]" type="text" class="form-control phone" name="phones[{{$key}}][number]" value="{{ old('phones.'.$key.'.number', isset($phone->number) ? $phone->number : '')}}" placeholder="Telefone" required>
                                             <span class="errors"> {{ $errors->first('phones.'.$key.'.number') }} </span>
                                         </div>
                                         <div class="col-md-3 mt-1">

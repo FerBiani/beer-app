@@ -132,10 +132,6 @@ function getFavorites() {
         url: main_url+'/verify-favorites',
         success: function(data) {
 
-           if(data == '') {
-               $("#result").html('<h3 class="mt-2">Você não possui nenhum favorito.</h3>')
-           }
-
            var ids = data.join('|')
 
            parameters = 'ids='+ids

@@ -8,13 +8,13 @@
                 <div class="card-header">Login</div>
 
                 <div class="card-body">
-                    <form id="form" method="POST" action="{{ url('/login') }}">
+                    <form id="form" method="POST" action="{{ url('/login') }}" autocomplete="off">
                         @csrf
 
                         <div class="form-group">
                             <label for="email" class="col-md-4 col-form-label"><b>E-mail</b></label>
                             <div class="col-md-12">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email', '') }}" placeholder="Nome" required autofocus>
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email', '') }}" placeholder="Nome" required>
                                 <span class="errors"> {{ $errors->first('email') }} </span>
                             </div>
                         </div>
@@ -42,4 +42,7 @@
         </div>
     </div>
 </div>
+@endsection
+@section('script')
+<script type="text/javascript" src="{{asset('js/form/validations.js')}}"></script>
 @endsection

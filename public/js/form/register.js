@@ -8,10 +8,7 @@ function clone(target, local, indices) {
         $(target).last().find('input, select').each(function(i, input) {
             var index = $(this).attr('name').split('[')[1].split(']')[0]
             $(this).attr('name', $(this).attr('name').replace(index, parseInt(index) + 1))
-            if($(input).hasClass("custom-file-input")){
-                $(this).parent().find(".custom-file-label").html("Selecione");
-                $(this).closest(".input-group").find(".file_download").remove()
-            }
+            $(this).attr('id', $(this).attr('name'))
         })
     }
 }

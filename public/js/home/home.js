@@ -25,11 +25,4 @@ $(document).ready(function() {
 
     })
 
-    // $(document).on('click', '.more', function() {
-
-    //     var id = this.id.split('-')[1]
-    //     loadOne(id)
-
-    // })
-
 })
