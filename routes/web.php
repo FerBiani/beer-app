@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/', function(){
+    return 'funcionou';
+});
+
 Route::get('/home', 'HomeController@index');
 
 Route::resource('user', 'UserController')->only([
