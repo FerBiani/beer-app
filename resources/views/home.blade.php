@@ -46,23 +46,21 @@
                             <button class="btn btn-primary" id="next" onclick="next()"><i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
-                    <div style="overflow-x:auto">
-                        <table class="table">
-                            <thead class="thead thead-dark">
-                                <tr>
-                                    <th>Nome</th>
-                                    <th>Slogan</th>
-                                    <th>Primeira Fabricação</th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody id="result">
+                    <table class="table table-responsive">
+                        <thead class="thead thead-dark">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Slogan</th>
+                                <th>Primeira Fabricação</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="result">
 
-                            </tbody>
-                            
-                        </table>
-                    </div>
+                        </tbody>
+                        
+                    </table>
                 </div>
                 
             </div>

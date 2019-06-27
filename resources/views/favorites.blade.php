@@ -14,7 +14,7 @@
                                 <button class="btn btn-primary" id="next" onclick="next()"><i class="fas fa-arrow-right"></i></button>
                             </div>
                         </div>
-                        <table class="table">
+                        <table class="table table-responsive">
                             <thead class="thead thead-dark">
                                 <tr>
                                     <th>Nome</th>
