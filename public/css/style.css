@@ -1,0 +1,17 @@
+body {
+    background-color: #120e53;
+}
+
+.errors, label.error {
+    color: red;
+    font-size: small;
+    font-weight: bold;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.star-icon-yellow, .star-icon-yellow:hover{
+    color: yellow;
+}
