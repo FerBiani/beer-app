@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
 Route::get('/home', 'HomeController@index');
 
 Route::resource('user', 'UserController')->only([
